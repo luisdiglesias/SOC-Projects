@@ -17,3 +17,19 @@
 **Classification:**  True Positive 
 **Action Taken:** No Endpoint containment was required as the firewall successfully blocked all login attempts. Password for targeted user (test@letsdefend.io) was changed. 
 **Time to Triage:** 30 minutes.
+
+## Alert #2
+**Date** September 7 2026
+**Alert Title:** SOC143 - Password Stealer Detected
+**Severity:** Medium
+**Source IP:** 
+**Target:**
+
+**Hypothesis:**
+
+**Evidence:**
+- 
+
+**Classification:**
+**Action Taken:**
+**Time to Triage:**
