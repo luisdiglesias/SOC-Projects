@@ -47,3 +47,31 @@
 **Action Taken:** Deleted the malicious email from the users inbox to prevent future interactions. Blocked the senders IP address and updated the spam filter rules.
 
 **Time to Triage:** 20 minutes.
+
+Date: September 28, 2026
+
+Alert Title: SOC326 - Impersonating Domain MX Record Change Detected
+
+Severity: High
+
+Source: letsdefwnd.io (Typosquatting Domain)
+
+Target: mateo@letsdefend.io 
+
+Hypothesis: An attacker used a weaponized typosquatting domain to bypass filters and successfully phish an internal user.
+
+Evidence:
+
+Threat Intel: CTI alert flagged letsdefwnd.io for suspicious MX record activation.
+
+Email Security: Confirmed delivery of a phishing email to Mateo's inbox.
+
+Endpoint Analysis: Browser history shows the user clicked the malicious link ([http://www.letsdefwnd.io/](http://www.letsdefwnd.io/)).
+
+Network Logs: Proxy logs show an outbound HTTPS connection (Port 443) to the attacker IP (45.33.23.183). Payload submission could not be ruled out due to encryption.
+
+Classification: True Positive (Successful Phishing Click)
+
+Action Taken: Isolated the endpoint (172.16.17.162), purged the email from the inbox, blocked the domain/IP at the firewall, and forced a user password reset.
+
+Time to Triage: 30 min.
