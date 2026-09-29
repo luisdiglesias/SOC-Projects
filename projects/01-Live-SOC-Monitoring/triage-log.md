@@ -2,9 +2,13 @@
 
 ## Alert #1 
 **Date:** September 7 2026
+
 **Alert Title:** SOC325 - Unauthorized Cloud Region Access Attempt Detected
+
 **Severity:** Low
+
 **Source IP:**  134.209.145.73 (External/DigitalOcean)
+
 **Target:** 52.15.206.21 (AWS_Services Endpoint)
 
 **Hypothesis:** External attacker attempting a brute-force/credential stuffing attack.
@@ -22,9 +26,13 @@
 
 ## Alert #2
 **Date** September 7 2026
+
 **Alert Title:** SOC143 - Password Stealer Detected
+
 **Severity:** Medium
+
 **Source IP:** 180.76.101.229 (bill@microsoft.com)
+
 **Target:** ellie@letsdefend.io
 
 **Hypothesis:** External threat actor is spoofing a Microsoft email address to deliver a malicious file designed to steal employee credentials.
