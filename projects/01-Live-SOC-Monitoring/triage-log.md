@@ -15,7 +15,9 @@
 - Looked up the source IP on VirusTotal. It has been flagged for phishing and malicious activity.
 
 **Classification:**  True Positive 
+
 **Action Taken:** No Endpoint containment was required as the firewall successfully blocked all login attempts. Password for targeted user (test@letsdefend.io) was changed. 
+
 **Time to Triage:** 10 minutes.
 
 ## Alert #2
@@ -33,5 +35,7 @@
 - The email bypassed the spam filters and reached the users inbox. Reviewed Log Management and Endpoint logs to check for outbound connections to any of the IP addresses associated with the malicious file. Zero connections were found, confirming the user did not open the attachment.
 
 **Classification:** True Positive (Phishing attempt)
+
 **Action Taken:** Deleted the malicious email from the users inbox to prevent future interactions. Blocked the senders IP address and updated the spam filter rules.
+
 **Time to Triage:** 20 minutes.
